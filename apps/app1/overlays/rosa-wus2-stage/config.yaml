@@ -1,8 +1,5 @@
 appName: app2
 userGivenName: app2
 destNamespace: app2
-destServer: rosa-wus2-stage
-srcPath: apps/app1/overlays/rosa-wus2-stage
-srcRepoURL: https://github.com/noseka1/gitops-example-apps
 srcTargetRevision: ""
 labels: null
