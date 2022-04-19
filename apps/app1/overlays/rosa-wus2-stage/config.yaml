@@ -1,5 +1,4 @@
 appName: app2
-userGivenName: app2
 destNamespace: app2
 srcTargetRevision: ""
 labels: null
