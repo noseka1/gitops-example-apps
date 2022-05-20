@@ -24,5 +24,3 @@ spec:
       - name: init
         configMap:
           name: toolbox-container-init
-      tolerations:
-      - operator: Exists
