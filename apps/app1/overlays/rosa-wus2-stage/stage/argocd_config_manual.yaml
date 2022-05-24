@@ -1,2 +1,3 @@
 appName: app1
 destNamespace: app1
+targetRevision: HEAD
