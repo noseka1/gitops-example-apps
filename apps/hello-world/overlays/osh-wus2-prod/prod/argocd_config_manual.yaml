@@ -1,0 +1,3 @@
+appName: hello-world-prod
+destNamespace: hello-world-prod
+targetRevision: HEAD
