@@ -14,3 +14,5 @@ configMapGenerator:
 resources:
 - toolbox-container-deploy.yaml
 - toolbox-container-sa.yaml
+- toolbox-container-svc.yaml
+- toolbox-container-route.yaml

@@ -19,6 +19,8 @@ spec:
         volumeMounts:
         - name: init
           mountPath: /toolbox
+        ports:
+        - containerPort: 8080
       serviceAccountName: toolbox-container
       volumes:
       - name: init
