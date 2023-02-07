@@ -13,9 +13,8 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: hello-world
-        imagePullPolicy: Always
-        name: hello-world
+      - name: app
+        image: hello-world
         volumeMounts:
         - name: init
           mountPath: /toolbox
