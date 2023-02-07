@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: splunk-logging-env
+data:
+  LOGGING_LEVEL_CONSOLE: WARN
+  LOGGING_LEVEL_ROOT: WARN
+  LOGGING_LEVEL_SPLUNK: WARN

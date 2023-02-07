@@ -1,0 +1,3 @@
+appName: microservices-demo-test
+destNamespace: microservices-demo-test
+targetRevision: HEAD
