@@ -1,28 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: toolbox-container
+  name: hello-world
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: toolbox-container
+      app: hello-world
   template:
     metadata:
       labels:
-        app: toolbox-container
+        app: hello-world
     spec:
       containers:
-      - image: toolbox-container
+      - image: hello-world
         imagePullPolicy: Always
-        name: toolbox-container
+        name: hello-world
         volumeMounts:
         - name: init
           mountPath: /toolbox
         ports:
         - containerPort: 8080
-      serviceAccountName: toolbox-container
+      serviceAccountName: hello-world
       volumes:
       - name: init
         configMap:
-          name: toolbox-container-init
+          name: hello-world-init

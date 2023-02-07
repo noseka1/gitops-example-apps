@@ -2,17 +2,19 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 images:
-- name: toolbox-container
+- name: hello-world
   newName: quay.io/noseka1/toolbox-container
   newTag: basic
 
 configMapGenerator:
-- name: toolbox-container-init
+- name: hello-world-init
   files:
   - init.sh
+  options:
+    disableNameSuffixHash: true
 
 resources:
-- toolbox-container-deploy.yaml
-- toolbox-container-sa.yaml
-- toolbox-container-svc.yaml
-- toolbox-container-route.yaml
+- hello-world-deploy.yaml
+- hello-world-sa.yaml
+- hello-world-svc.yaml
+- hello-world-route.yaml

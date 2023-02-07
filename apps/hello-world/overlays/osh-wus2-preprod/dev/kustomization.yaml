@@ -4,7 +4,7 @@ resources:
 - ../../../base
 
 configMapGenerator:
-- name: toolbox-container-init
+- name: hello-world-init
   behavior: merge
   files:
   - init.sh

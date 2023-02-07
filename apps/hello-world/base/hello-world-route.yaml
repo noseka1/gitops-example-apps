@@ -1,10 +1,10 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: toolbox-container
+  name: hello-world
 spec:
   port:
     targetPort: http-8080
   to:
     kind: Service
-    name: toolbox-container
+    name: hello-world
