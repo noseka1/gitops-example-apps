@@ -4,7 +4,12 @@ resources:
 - ../../../base
 
 configMapGenerator:
-- name: hello-world-init
-  behavior: merge
+- behavior: merge
   files:
   - init.sh
+  name: hello-world-init
+
+images:
+- name: hello-world
+  newName: quay.io/noseka1/toolbox-container
+  newTag: basic
