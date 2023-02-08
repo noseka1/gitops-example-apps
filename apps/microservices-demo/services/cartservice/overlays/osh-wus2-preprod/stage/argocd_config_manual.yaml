@@ -1,0 +1,3 @@
+appName: cartservice-stage
+destNamespace: microservices-demo-stage
+targetRevision: HEAD
