@@ -1,6 +1,6 @@
 #!/bin/bash
 
-msg="Hello from cartservice version 2 in prod!"
+msg="Hello from cartservice in prod!"
 
 echo $msg | tee index.html
 
