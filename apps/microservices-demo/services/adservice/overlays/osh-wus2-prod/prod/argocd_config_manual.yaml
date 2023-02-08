@@ -1,0 +1,3 @@
+appName: adservice-prod
+destNamespace: microservices-demo-prod
+targetRevision: HEAD

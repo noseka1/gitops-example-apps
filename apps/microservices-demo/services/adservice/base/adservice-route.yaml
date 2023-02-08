@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: adservice
+spec:
+  port:
+    targetPort: http-8080
+  to:
+    kind: Service
+    name: adservice
