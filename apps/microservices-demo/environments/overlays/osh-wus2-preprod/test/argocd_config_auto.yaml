@@ -1,3 +1,2 @@
-appName: microservices-demo-test
-destNamespace: microservices-demo-test
-targetRevision: HEAD
+appName: microservices-demo
+destNamespace: microservices-demo

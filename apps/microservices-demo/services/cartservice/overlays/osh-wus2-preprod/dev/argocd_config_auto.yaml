@@ -1,3 +1,2 @@
-appName: cartservice-dev
-destNamespace: microservices-demo-dev
-targetRevision: HEAD
+appName: cartservice
+destNamespace: microservices-demo

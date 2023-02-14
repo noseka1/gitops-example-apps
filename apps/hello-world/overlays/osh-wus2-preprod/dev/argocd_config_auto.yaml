@@ -1,3 +1,2 @@
-appName: hello-world-dev
-destNamespace: hello-world-dev
-targetRevision: HEAD
+appName: hello-world
+destNamespace: hello-world

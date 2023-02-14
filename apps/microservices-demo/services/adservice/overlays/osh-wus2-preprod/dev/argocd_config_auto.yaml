@@ -1,3 +1,2 @@
-appName: adservice-dev
-destNamespace: microservices-demo-dev
-targetRevision: HEAD
+appName: adservice
+destNamespace: microservices-demo
