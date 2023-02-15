@@ -10,6 +10,8 @@ spec:
         readinessProbe:
           httpGet:
             port: 8080
+          periodSeconds: 10
         livenessProbe:
           httpGet:
             port: 8080
+          periodSeconds: 10
