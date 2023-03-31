@@ -1,0 +1,3 @@
+serviceName: addservice
+environment: stage
+probePeriod: 10

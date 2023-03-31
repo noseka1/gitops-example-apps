@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: activemq-env
-data:
-  ACTIVEMQ_BROKER_URL: 'tcp://activemq:61616'

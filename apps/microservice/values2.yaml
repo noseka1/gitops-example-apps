@@ -1,0 +1,3 @@
+serviceName: addservice
+environment: dev
+probePeriod: 10

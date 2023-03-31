@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.serviceName }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.serviceName }}
+    spec:
+      containers:
+      - envFrom:
+        - configMapRef:
+            name: activemq-env
+        - configMapRef:
+            name: database-env
+        - configMapRef:
+            name: splunk-logging-env
+        image: quay.io/noseka1/toolbox-container:basic
+        livenessProbe:
+          httpGet:
+            port: 8080
+          periodSeconds: 10
+        name: app
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            port: 8080
+          periodSeconds: {{ .Values.probePeriod }}
+        resources:
+          limits:
+            memory: 50Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
+        volumeMounts:
+        - mountPath: /toolbox
+          name: init
+      serviceAccountName: {{ .Values.serviceName }}
+      volumes:
+      - configMap:
+          name: {{ .Values.serviceName }}-init
+        name: init

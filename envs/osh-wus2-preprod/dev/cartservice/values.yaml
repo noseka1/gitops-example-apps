@@ -1,0 +1,3 @@
+serviceName: cartservice
+environment: dev
+probePeriod: 10
